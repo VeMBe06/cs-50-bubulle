@@ -1,0 +1,43 @@
+Project: Breathing bubble app
+
+    what it is /functionalities:
+        web application based on flask/python, could eventually be developped for android to use for myself?
+        Shows a bubble that grows and shrinks on the screen
+        User can choose most parameters for the breathing practice: 
+            - breathe in time
+            - breath hold time
+            - breathe out time
+            - no breath hold time
+            - practice duration
+        
+        Key point for this app (and why I want to make it in the first place) is that you can modify the display
+         to have something super minimalistic and dark, to use in dark room before bed to not overexpose the eyes likemost apps do
+            * the display would be completely dark,with the bubble reduced to a thin, dark gray circle that you would almost not see.
+             with an OLED display you would be able tohave most of the screen turned off in this setting.
+        Will also have default display which is "normal" 
+        
+        Extra features:
+            - add ambient music/sounds
+            - add other display colors 
+            - make the bubble actually nice? 
+            
+
+
+
+
+    What it does:
+        //
+
+
+    How it works:
+        Use flask + python for the backend
+        Use html/css for the frontend
+        the actual animation is handled by the css 
+        the parameters for the breathing practice are modified via javascript?
+    
+TIMELINE:
+    * THU:  proof-of-concept, have a bubble that is ugly but works
+    * SAT:  Main features done, app can be uploaded, start working on the
+            video ad README file
+    * SUN: Video Done, project completed and uploaded 
+    
