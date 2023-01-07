@@ -12,7 +12,8 @@
      <!-- Link my CSS file -->
     <link href="/static/styles.css" rel="stylesheet">
 
-
+    <!-- Link my js file, with Defer tag -->
+    <script defer type="text/javascript" src="{{url_for('static', filename= 'index.js' )}}"></script>
 
     <title>Bubulle: {% block title %}{% endblock %}</title>
 </head>
@@ -38,11 +39,10 @@
         </div>
     </nav>
 
-    <main class="container-fluid justify-content-center">
+    <main class="container-fluid">
         {% block main %}{% endblock %}
     </main>
 
     <footer>/footer/</footer>
-    <script type="text/javascript" src="{{url_for('static', filename= 'index.js' )}}"></script>
 </body>
 </html>

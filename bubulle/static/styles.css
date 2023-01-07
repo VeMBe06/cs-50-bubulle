@@ -9,6 +9,12 @@ body {
     font-size: 15px;
 }
 
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .bubble {
     width: 15em; 
     height: 15em; 
@@ -44,6 +50,12 @@ body {
 
 }
 
+
+
+/* StartStop button */
+#StartStop {
+    margin: 50px;    
+}
 
 /* .nav-color-default {
     background-color: #160049;
