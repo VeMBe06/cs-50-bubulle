@@ -11,7 +11,7 @@ Project: Breathing bubble app
             - practice duration
         
         Key point for this app (and why I want to make it in the first place) is that you can modify the display
-         to have something super minimalistic and dark, to use in dark room before bed to not overexpose the eyes likemost apps do
+         to have something super minimalistic and dark, to use in dark room before bed to not overexpose the eyes like most apps do
             * the display would be completely dark,with the bubble reduced to a thin, dark gray circle that you would almost not see.
              with an OLED display you would be able tohave most of the screen turned off in this setting.
         Will also have default display which is "normal" 
@@ -41,3 +41,8 @@ TIMELINE:
             video ad README file
     * SUN: Video Done, project completed and uploaded 
     
+
+Minimum features to ship:
+    - main app tabs: home,  theme, about
+    - Bubble params not modifyable: 5s in, 5s hold, 5s, out
+    - normal theme + dark, minimalist theme for night

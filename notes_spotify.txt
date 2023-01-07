@@ -1,0 +1,10 @@
+Before going into the project:
+    Watch the GIT semminar from CS50
+    git clone CS50 projects to my local vscode 
+
+spotify project:
+Learn about APIs    |   do the spotify api tutorial
+Lay the grounds specifications of my program, quickly try to evaluate whether it is feasible
+//
+Node.js tutorial:       https://www.youtube.com/watch?v=ENrzD9HAZK4
+Spotify api tutorial:      https://developer.spotify.com/documentation/web-api/quick-start/

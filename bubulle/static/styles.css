@@ -1,0 +1,56 @@
+
+body {
+
+    /* Default theme = dark purple */
+   
+    /* padding: 2px; */ 
+    background-color: #220072;
+    color: #cccccc;
+    font-size: 15px;
+}
+
+.bubble {
+    width: 15em; 
+    height: 15em; 
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid #ececec;
+
+
+}
+
+/*  Animation  */
+.breathing {
+    animation-name: breathe;
+    animation-duration: 14s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+    /* Keyframes for animation */
+@keyframes breathe {
+    /* start */
+    0% {
+        transform: scale(1.0) ;
+    }
+    /* 5s out + 1s hold down */
+    35.7%, 42.9% {
+        transform: scale(0.3);
+    }
+    /* 5s up + 3s hold up */
+    78.6%, 100% {
+        transform: scale(1.0);
+    }
+
+}
+
+
+/* .nav-color-default {
+    background-color: #160049;
+    color: white;
+ */
+
+/* Dark theme info:
+    surface color: #121212
+
+*/
