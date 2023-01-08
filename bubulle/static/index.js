@@ -35,14 +35,33 @@ var profile2 = document.getElementById("profile2")
 var profile3 = document.getElementById("profile3")
 var profile4 = document.getElementById("profile4")
 
-// Add event listeners
-profile1.addEventListener("click", param("profile1"))
-profile2.addEventListener("click", param("profile2"))
-profile3.addEventListener("click", param("profile3"))
-profile4.addEventListener("click", param("profile4"))
+// Then get .breathing class queryselector
+var breatheclass = document.querySelector(".breathing")
 
-// param() function
-function param(str) {
-    // Check if there's already a breathing profile
-}
+
+// Add event listeners
+profile1.addEventListener("change", function() {
+    console.log("clicked on button 1")
+    breatheclass.style.animationName = "breathe1"
+    breatheclass.style.animationDuration = 6 + "s"
+})
+
+profile2.addEventListener("change", function() {
+    breatheclass.style.animationName = "breathe2"
+    breatheclass.style.animationDuration = 9 + "s"
+
+})
+
+profile3.addEventListener("change", function() {
+    breatheclass.style.animationName = "breathe3"
+    breatheclass.style.animationDuration = 14 + "s"
+
+})
+
+profile4.addEventListener("change", function() {
+    breatheclass.style.animationName = "breathe4"
+    breatheclass.style.animationDuration = 17 + "s"
+
+})
+
 

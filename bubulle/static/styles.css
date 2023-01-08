@@ -64,16 +64,8 @@ cursor: pointer;
 
 }
 
-/*  Animation  */
-.breathing {
-    animation-name: breathe1;
-    animation-duration: 12s;
-    animation-delay: 0s;
-    animation-timing-function: cubic-bezier(0.6, 0.02, 0.36, 0.94);
-    animation-iteration-count: infinite;
-}
+/*  Animation: .breathe class is directly on the html (on layout.html)*/
 /* Keyframes for animation */
-
 @keyframes breathe1 {
     /* Breathing profile 1: 1:2:2; 6s tot */
     /* start */
@@ -97,7 +89,7 @@ cursor: pointer;
         transform: scale(1.0) ;
     }
     /* 2s out + 1s hold down */
-    33.3%, 50% {
+    33.3%, 44.4% {
         transform: scale(0.3);
     }
     /* 1s up + 2s hold up */
@@ -130,11 +122,11 @@ cursor: pointer;
         transform: scale(1.0) ;
     }
     /* 2s out + 1s hold down */
-    33.3%, 50% {
+    41.2%, 47.1% {
         transform: scale(0.3);
     }
     /* 1s up + 2s hold up */
-    66.7%, 100% {
+    76.5%, 100% {
         transform: scale(1.0);
     }
 }
