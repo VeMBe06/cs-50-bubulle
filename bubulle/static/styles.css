@@ -15,6 +15,46 @@ div {
     align-items: center;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #cccccc;
+}
+
+a:hover {
+color: #cccccc;
+text-decoration: none;
+cursor: pointer;
+}
+
+.btn-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    color: #cccccc;
+    background-color: #351288;
+    border: 2px solid black;
+
+    margin: 5px;
+}
+
+.centrage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+}
+
 .bubble {
     width: 15em; 
     height: 15em; 
@@ -26,14 +66,49 @@ div {
 
 /*  Animation  */
 .breathing {
-    animation-name: breathe;
-    animation-duration: 14s;
+    animation-name: breathe1;
+    animation-duration: 12s;
     animation-delay: 0s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: cubic-bezier(0.6, 0.02, 0.36, 0.94);
     animation-iteration-count: infinite;
 }
-    /* Keyframes for animation */
-@keyframes breathe {
+/* Keyframes for animation */
+
+@keyframes breathe1 {
+    /* Breathing profile 1: 1:2:2; 6s tot */
+    /* start */
+    0% {
+        transform: scale(1.0) ;
+    }
+    /* 2s out + 1s hold down */
+    33.3%, 50% {
+        transform: scale(0.3);
+    }
+    /* 1s up + 2s hold up */
+    66.7%, 100% {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes breathe2 {
+    /* Breathing profile 2: 2:3:3; 9s tot */
+    /* start */
+    0% {
+        transform: scale(1.0) ;
+    }
+    /* 2s out + 1s hold down */
+    33.3%, 50% {
+        transform: scale(0.3);
+    }
+    /* 1s up + 2s hold up */
+    66.7%, 100% {
+        transform: scale(1.0);
+    }
+}
+
+
+@keyframes breathe3 {
+    /* Breathing profile 3: 5:3:5; 14s tot */
     /* start */
     0% {
         transform: scale(1.0) ;
@@ -46,7 +121,22 @@ div {
     78.6%, 100% {
         transform: scale(1.0);
     }
+}
 
+@keyframes breathe4 {
+    /* Breathing profile 4: 5:4:7; 17s tot */
+    /* start */
+    0% {
+        transform: scale(1.0) ;
+    }
+    /* 2s out + 1s hold down */
+    33.3%, 50% {
+        transform: scale(0.3);
+    }
+    /* 1s up + 2s hold up */
+    66.7%, 100% {
+        transform: scale(1.0);
+    }
 }
 
 
@@ -54,7 +144,10 @@ div {
 /* StartStop button */
 #StartStop {
     margin: 50px;    
+    padding: 10px;
 }
+
+
 
 /* .nav-color-default {
     background-color: #160049;

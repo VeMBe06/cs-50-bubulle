@@ -18,8 +18,6 @@ app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
-
-
 @app.after_request
 def after_request(response):
     """Ensure responses aren't cached"""
@@ -28,9 +26,41 @@ def after_request(response):
     response.headers["Pragma"] = "no-cache"
     return response
 
+
+
+
 @app.route("/")
 def index():
     """Show the main screen with bubble"""
 
     return render_template("index.html")
+
+@app.route("/parameters")
+def parameters():
+    """Change breathing parameters"""
+    if request.method == "POST":
+        # If we POST, we update the breathing parameters on CSS with JS
+        
+        return
+    
+    else:
+        # Else we just render the webpage
+        return render_template("parameters.html")
+
+
+
+
+@app.route("/theme")
+def theme():
+    """Change theme"""
+    
+    return render_template("theme.html")
+
+
+
+@app.route("/about")
+def about():
+    """Show a quick explanation of the app"""
+    
+    return render_template("about.html")
 

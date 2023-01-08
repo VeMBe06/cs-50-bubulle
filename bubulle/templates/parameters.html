@@ -3,5 +3,23 @@
 {% block title %}Parameters{% endblock %}
 
 {% block main %}
-    BREATHING PARAMETERS
+    <div id="explanation">
+        <h2>
+            How to read the breathing ratio:
+        </h2>
+    </div>
+    <div>
+        <p>Ratio (in seconds) = I : HI : O </p>
+        <ul>
+            <li>I = Breathe IN</li>
+            <li>HI = Hold IN</li>
+            <li>O = Breathe OUT</li>
+        </ul>
+    </div>
+    <div class="btn-grid">
+        <button class="btn" id="profile1"><a class="" href="/">1:2:2</a></button>
+        <button class="btn" id="profile1"><a href="/">2:3:3</a></button>
+        <button class="btn" id="profile1"><a href="/">5:3:5</a></button>
+        <button class="btn" id="profile1"><a href="/">5:4:7</a></button>
+    </div>
 {% endblock %}

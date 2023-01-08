@@ -27,3 +27,22 @@ function Stop() {
 
 
 
+
+// Set up breathing parameters buttons
+// First get buttons ids
+var profile1 = document.getElementById("profile1")
+var profile2 = document.getElementById("profile2")
+var profile3 = document.getElementById("profile3")
+var profile4 = document.getElementById("profile4")
+
+// Add event listeners
+profile1.addEventListener("click", param("profile1"))
+profile2.addEventListener("click", param("profile2"))
+profile3.addEventListener("click", param("profile3"))
+profile4.addEventListener("click", param("profile4"))
+
+// param() function
+function param(str) {
+    // Check if there's already a breathing profile
+}
+
