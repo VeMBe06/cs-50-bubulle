@@ -98,7 +98,6 @@ cursor: pointer;
     }
 }
 
-
 @keyframes breathe3 {
     /* Breathing profile 3: 5:3:5; 14s tot */
     /* start */
@@ -139,7 +138,9 @@ cursor: pointer;
     padding: 10px;
 }
 
-
+#btn-param {
+    margin: 20px;
+}
 
 /* .nav-color-default {
     background-color: #160049;

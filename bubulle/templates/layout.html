@@ -15,11 +15,11 @@
     <!-- Link my js file, with Defer tag -->
     <script defer type="text/javascript" src="{{url_for('static', filename= 'index.js' )}}"></script>
 
-    <!-- Style fro the breathing class directly here so I can manipulate it -->
+    <!-- Style for the breathing class directly here so I can manipulate it -->
     <style>
         .breathing {
-            animation-name: breathe3;
-            animation-duration: 14s;
+            animation-name: {{anim_name | default("breathe3", true)}};
+            animation-duration: {{anim_dur | default(14, true)}}s;
             animation-timing-function: cubic-bezier(0.6, 0.02, 0.36, 0.94);
             animation-iteration-count: infinite;
         }
