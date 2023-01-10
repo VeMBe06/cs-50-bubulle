@@ -35,12 +35,23 @@ cursor: pointer;
 hr {
     width: 30%;
 }
+
+h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* NavBar personalization */
 .nav-item {
     margin: 5px;
 }
 
-
+.foot {
+    display: grid;
+    grid-template-rows: 3;
+    align-items: center;
+}
 
 .btn-grid {
     display: flex;
@@ -157,6 +168,9 @@ hr {
     margin: 20px;
 }
 
+#VeMBe {
+    margin: 10px;
+}
 
 /* Dark theme info:
     surface color: #121212

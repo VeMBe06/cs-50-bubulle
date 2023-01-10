@@ -11,10 +11,22 @@
         <hr>
     </div>
     
-    <div>
-        <button class="btn" id="themeDefault">Default</button>
-        <button class="btn" id="themeDark">Dark mode</button>
-        <button class="btn" id="themeNight">Night mode</button>
-    </div>
+
+    <!-- <div>
+        <button class="btn" id="themeDefault" onclick="defaultmode()">Default</button>
+        <button class="btn" id="themeDark" onclick="darkmode()">Dark mode</button>
+        <button class="btn" id="themeNight" onclick="nightmode()">Night mode</button>
+    </div> -->
+
+    <form action="/theme" method="post">
+        <select class="form-select mx-auto w-auto" name="theme">
+            <option selected value="default">default</option>
+            <option value="dark">Dark mode</option>
+            <option value="night">Night mode</option>
+        </select>
+        <div>
+            <button class="btn" type="submit" id="btn-theme">Save changes</button>
+        </div>
+        </form>
 
 {% endblock %}

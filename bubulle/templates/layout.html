@@ -29,7 +29,7 @@
 </head>
 
 
-<body class="night-mode">
+<body class="{{theme | default("", true)}}">
     <nav class="navbar-dark bg-dark navbar-expand-sm">
         <div class="container-fluid justify-content-center">
             <ul class="navbar-nav">
@@ -39,9 +39,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/parameters">Breathing parameters</a> 
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/theme">Theme</a>
-                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="/about">About</a>
                  </li>
@@ -53,6 +51,19 @@
         {% block main %}{% endblock %}
     </main>
 
-    <footer>Application created by Yours Truly: VeMBe</footer>
+    <footer>
+        <div class="foot">
+            <h6>Themes:</h6>
+            <div>
+                <button class="btn" id="themeDefault" onclick="defaultmode()">Default</button>
+                <button class="btn" id="themeDark" onclick="darkmode()">Dark mode</button>
+                <button class="btn" id="themeNight" onclick="nightmode()">Night mode</button>
+            </div>
+            <div id="VeMBe">
+                Application created by Yours Truly: VeMBe
+            </div>
+        </div>
+            
+    </footer>
 </body>
 </html>
