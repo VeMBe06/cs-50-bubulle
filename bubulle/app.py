@@ -1,6 +1,6 @@
 # Import everything you need
 
-from flask import Flask, redirect, render_template, request
+from flask import Flask, render_template, request
 from flask_session import Session
 
 # Configure app
@@ -34,6 +34,7 @@ def index():
     """Show the main screen with bubble"""
 
     return render_template("index.html")
+
 
 @app.route("/parameters", methods=["GET", "POST"])
 def parameters():
