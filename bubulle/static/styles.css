@@ -7,6 +7,7 @@ body {
     background-color: #220072;
     color: #c9c2c2;
     font-size: 15px;
+    
 }
 
 div {
@@ -14,6 +15,8 @@ div {
     justify-content: center;
     align-items: center;
 }
+
+
 
 footer {
     display: flex;
@@ -42,6 +45,9 @@ h6 {
     align-items: center;
 }
 
+h2{
+    margin: 15px;
+}
 /* NavBar personalization */
 .nav-item {
     margin: 5px;
@@ -82,6 +88,15 @@ h6 {
     border-radius: 50%;
     border: 3px solid #ececec;
 
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1;
+    place-items: center;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 /*  Animation: .breathe class is directly on the html (on layout.html)*/
@@ -172,10 +187,8 @@ h6 {
     margin: 10px;
 }
 
-/* Dark theme info:
-    surface color: #121212
 
-*/
+
 
 /* Themes */
 .dark-mode {
@@ -215,10 +228,6 @@ h6 {
     transition: 300ms ease-in-out;
 
 }
-
-
-
-
 
 
 .night-mode {

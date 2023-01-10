@@ -70,33 +70,6 @@ def parameters():
 
 
 
-@app.route("/theme", methods=["POST", "GET"])
-def theme():
-    """Change the theme across the app"""
-    
-    if request.method == "POST":
-        # Check which theme was seleted and render /index with the correct theme
-
-        # Get the info from form
-        theme = request.form.get("theme")
-
-        # Render template with the correct theme added as variable 
-        if theme == "default":
-            return render_template("index.html", theme="")
-        elif theme == "dark":
-            return render_template("index.html", theme="dark-mode")
-        elif theme == "night":
-            return render_template("index.html", theme="night-mode")
-
-        return
-
-    
-    else:
-
-        return render_template("theme.html")
-
-
-
 @app.route("/about")
 def about():
     """Show a quick explanation of the app"""

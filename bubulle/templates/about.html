@@ -3,9 +3,31 @@
 {% block title %}Theme{% endblock %}
 
 {% block main %}
-    <div>
+    <div class="about">
         <h2>About this app:</h2>
-        <p>This app was created in the context of the Harvard CS50 course</p>
+        <p align="justify">
+            This app was created in the context of the Harvard CS50 course. The concept is to have a "bubble" grow and shrink
+            on the screen at a set pace and to use it as a visual cue to help you with your breathing exercises. 
+        </p>
+        <p align="justify">
+            How does the app work? When you first start the app you ca already start your breathing practice with the default 
+            settings, but it is recommended to jump to the "Breathing parameters" section first to choose which setting you 
+            want. There, you can chose between different modes and save your changes, which redirects you to the homepage
+            with the updated settings.
+        </p>
+        <p align="justify">
+            At the bottom of the page, you can see that you can also change the theme of the app: If you want you can select the 
+            dark theme to make it easy on the eyes, and you can also choose the "Night theme": this special theme is the reason
+            I wanted to create the app on the first place. I used t use this type of app a lot to help me relax at night right 
+            before going to sleep, but these aps used designs that were too bright and blinded me, so I wanted to create a 
+            special mode that was as dark as possible and very minimalist to not blind me anymore. That mode is night mode, 
+            try it for yourself! 
+        </p>
+        <p >
+            This app was built using the Flask framework on Python for the backend, HTML and CSS for the frontend and Javascript 
+            for the interactivity of the different buttons.
+
+        </p>
 
     </div>
 {% endblock %}
